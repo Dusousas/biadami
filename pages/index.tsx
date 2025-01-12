@@ -1,10 +1,9 @@
-import Header from "@/components/Header";
+// pages/index.tsx
 import Main from "@/components/Main";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <Main />
     </>
   );

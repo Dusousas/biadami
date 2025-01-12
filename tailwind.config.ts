@@ -9,8 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        BlueP: "#374c9f"
       },
       fontFamily: {
         Josefin: ['Josefin Sans', 'serif'],
