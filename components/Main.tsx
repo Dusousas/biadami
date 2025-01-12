@@ -62,7 +62,7 @@ export default function Main() {
                                 </div>
                             ) : (
                                 <a
-                                    href={image.link}
+                                    href={image.link || ""}
                                     className="absolute inset-0 flex justify-center items-center transition-opacity opacity-0 hover:opacity-100"
                                 >
                                     <div
