@@ -4,10 +4,11 @@ import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa';
 
 const images = [
     { src: "h12-port-img-1-1100x1100.jpg", classes: "col-span-2 row-span-2", link: "/Quadros", text1: "Quadros", text2: "Telas / Pinturas " },
-    { src: "h12-port-img-2.jpg", classes: "col-start-3", link: "/pagina-2", text1: "Ir para a Página 2", text2: "a" },
-    { src: "h12-port-img-3.jpg", classes: "col-start-4", link: "/pagina-3", text1: "Ir para a Página 3", text2: "Texto adicional 3" },
+    { src: "h12-port-img-2.jpg", classes: "col-start-3", link: "/pagina-2", text1: "Murais", text2: "A Arte que Acontece nas Paredes" },
+    { src: "h12-port-img-3.jpg", classes: "col-start-4", link: "/Parcerias", text1: "Parcerias", text2: "Criando Juntas, Transformando Marcas" },
     { src: "h12-port-img-4.jpg", classes: "col-start-5", link: "/pagina-4", text1: "Ir para a Página 4", text2: "Texto adicional 4" },
-    { src: "h12-port-img-5.jpg", classes: "col-start-3 row-start-2", link: "/pagina-5", text1: "Ir para a Página 5", text2: "Texto adicional 5" },
+    // item 5
+    { src: "h12-port-img-5.jpg", classes: "col-start-3 row-start-2", link: "/pagina-5", text1: "BIADAMI.ART", text2: "Levando arte por onde passo" },
     { src: "h12-port-img-6.jpg", classes: "col-start-4 row-start-2", link: "/pagina-6", text1: "Ir para a Página 6", text2: "Texto adicional 6" },
     { src: "h12-port-img-7.jpg", classes: "col-start-5 row-start-2", link: "/pagina-7", text1: "Ir para a Página 7", text2: "Texto adicional 7" },
     { src: "h12-port-img-13-1100x1100.jpg", classes: "row-start-3", link: "/pagina-8", text1: "Ir para a Página 8", text2: "Texto adicional 8" },
@@ -31,8 +32,9 @@ export default function Main() {
                                 src={image.src}
                                 alt={`Image ${index + 1}`}
                             />
-                            {/* Verificar se é o item "Social Media" */}
-                            {image.text2 === "Descubra nossas obras e inspirações" ? (
+
+                            {/* Verificar se é o item "Redes Sociais" ou "BIADAMI.ART" */}
+                            {(image.text2 === "Descubra nossas obras e inspirações") ? (
                                 <div className="absolute inset-0 flex justify-center items-center">
                                     <div
                                         className="bg-white flex flex-col items-center justify-center"
@@ -42,6 +44,7 @@ export default function Main() {
                                             padding: '10px', // padding interno
                                         }}
                                     >
+                                        
                                         <span className="text-BlueP font-semibold text-2xl mb-1 font-Josefin">{image.text1}</span>
                                         <span className="text-black font-light text-xl font-Josefin text-center">{image.text2}</span>
                                         <div className="flex gap-4 mt-4">
@@ -60,6 +63,20 @@ export default function Main() {
                                         </div>
                                     </div>
                                 </div>
+                            ) : (image.text2 === "Levando arte por onde passo") ? (
+                                <div className="absolute inset-0 flex justify-center items-center">
+                                    <div
+                                        className="bg-white flex flex-col items-center justify-center"
+                                        style={{
+                                            width: 'calc(100% - 40px)', // 10px de padding em cada lado
+                                            height: 'calc(100% - 40px)', // 10px de padding em cada lado
+                                            padding: '10px', // padding interno
+                                        }}
+                                    >
+                                        <span className="text-BlueP font-semibold text-2xl mb-1 font-Josefin">{image.text1}</span>
+                                        <span className="text-black font-light text-xl font-Josefin text-center">{image.text2}</span>
+                                    </div>
+                                </div>
                             ) : (
                                 <a
                                     href={image.link || ""}
@@ -74,12 +91,14 @@ export default function Main() {
                                         }}
                                     >
                                         <span className="text-BlueP font-semibold text-2xl mb-1 font-Josefin">{image.text1}</span>
-                                        <span className="text-black font-light text-xl font-Josefin">{image.text2}</span>
+                                        <span className="text-black font-light text-xl font-Josefin text-center">{image.text2}</span>
                                     </div>
                                 </a>
                             )}
                         </div>
                     ))}
+
+
                 </div>
             </div>
         </section>

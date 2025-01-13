@@ -4,7 +4,7 @@ export default function Quadros() {
     return (
         <>
             <section className='py-8'>
-                <div className=' mx-auto px-4'>
+                <div className='mx-auto px-4'>
                     <h1 className='text-center uppercase font-Josefin text-4xl text-BlueP font-light'>Do pincel ao coração</h1>
                     <h2 className='text-center pb-10 uppercase font-Josefin font-light text-2xl'>Arte exclusiva, criada à mão para inspirar e encantar.</h2>
 
