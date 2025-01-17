@@ -3,20 +3,19 @@ import React from 'react';
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa';
 
 const images = [
-    { src: "h12-port-img-1-1100x1100.jpg", classes: "col-span-2 row-span-2", link: "/Quadros", text1: "Quadros", text2: "Telas / Pinturas " },
-    { src: "h12-port-img-2.jpg", classes: "col-start-3", link: "/pagina-2", text1: "Murais", text2: "A Arte que Acontece nas Paredes" },
-    { src: "h12-port-img-3.jpg", classes: "col-start-4", link: "/Parcerias", text1: "Parcerias", text2: "Criando Juntas, Transformando Marcas" },
-    { src: "h12-port-img-4.jpg", classes: "col-start-5", link: "/pagina-4", text1: "Ir para a Página 4", text2: "Texto adicional 4" },
-    // item 5
-    { src: "h12-port-img-5.jpg", classes: "col-start-3 row-start-2", link: "/pagina-5", text1: "BIADAMI.ART", text2: "Levando arte por onde passo" },
-    { src: "h12-port-img-6.jpg", classes: "col-start-4 row-start-2", link: "/pagina-6", text1: "Ir para a Página 6", text2: "Texto adicional 6" },
-    { src: "h12-port-img-7.jpg", classes: "col-start-5 row-start-2", link: "/pagina-7", text1: "Ir para a Página 7", text2: "Texto adicional 7" },
-    { src: "h12-port-img-13-1100x1100.jpg", classes: "row-start-3", link: "/pagina-8", text1: "Ir para a Página 8", text2: "Texto adicional 8" },
-    { src: "h12-port-img-3.jpg", classes: "row-start-3", link: "/pagina-9", text1: "Ir para a Página 9", text2: "Texto adicional 9" },
-    { src: "h12-port-img-12-550x1100.jpg", classes: "row-span-2 row-start-3 h-full", link: null, text1: "Redes Sociais", text2: "Descubra nossas obras e inspirações" },
-    { src: "h12-port-img-13-1100x1100.jpg", classes: "col-span-2 row-span-2 row-start-3", link: "/pagina-11", text1: "Ir para a Página 11", text2: "Texto adicional 11" },
+    { src: "h12-port-img-1-1100x1100.jpg", classes: "col-span-2 row-span-2", link: "/Quadros", text1: "Quadros", text2: "Telas / Pinturas " }, //QUADROS
+    { src: "h12-port-img-2.jpg", classes: "col-start-3", link: "/pagina-2", text1: "Murais", text2: "A Arte que Acontece nas Paredes" }, //MURAIS
+    { src: "h12-port-img-3.jpg", classes: "col-start-4", link: "/Parcerias", text1: "Parcerias", text2: "Criando Juntas, Transformando Marcas" }, //PARCERIA
+    { src: "h12-port-img-4.jpg", classes: "col-start-5", link: "/SOBRE", text1: "Sobre", text2: "Minha Jornada Artística" }, //SOBRE
+    { src: "h12-port-img-5.jpg", classes: "col-start-3 row-start-2", link: "/pagina-5", text1: "BIADAMI.ART", text2: "Levando arte por onde passo" }, //FRASE
+    { src: "h12-port-img-6.jpg", classes: "col-start-4 row-start-2", link: "/pagina-6", text1: "Contato", text2: "Solicite um Orçamento" }, //CONTATO
+    { src: "h12-port-img-7.jpg", classes: "col-start-5 row-start-2", link: "/pagina-7", text1: "Fashion", text2: "Arte através das roupas" }, //ROUPAS
+    { src: "h12-port-img-13-1100x1100.jpg", classes: "row-start-3", link: "/pagina-8", text1: "Arte infantil", text2: "Transformando espaços e roupas em mundos de imaginação para crianças." }, //INFANTIL
+    { src: "h12-port-img-3.jpg", classes: "row-start-3", link: "/pagina-9", text1: "Depoimentos", text2: "Depoimentos de nossos apreciadores" }, //DEPOIMENTOS
+    { src: "h12-port-img-12-550x1100.jpg", classes: "row-span-2 row-start-3 h-full", link: null, text1: "Redes Sociais", text2: "Descubra nossas obras e inspirações" }, //Social Media
+    { src: "h12-port-img-13-1100x1100.jpg", classes: "col-span-2 row-span-2 row-start-3", link: "/Portfolio", text1: "Portfólio", text2: "Explorando as criações mais recentes que refletem a evolução artística e a paixão pela pintura." }, //Portfolio
     { src: "h12-port-img-6.jpg", classes: "row-start-4", link: "/pagina-12", text1: "Ir para a Página 12", text2: "Texto adicional 12" },
-    { src: "h12-port-img-13-1100x1100.jpg", classes: "row-start-4", link: "/pagina-13", text1: "Ir para a Página 13", text2: "Texto adicional 13" }
+    { src: "h12-port-img-13-1100x1100.jpg", classes: "row-start-4", link: "/Sobre", text1: "", text2: "" } 
 ];
 
 export default function Main() {

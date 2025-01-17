@@ -23,9 +23,9 @@ export default function Navbar() {
             <nav className='hidden lg:block'>
                 <ul className='flex gap-8 text-BlueP uppercase font-Josefin font-light text-lg'>
                     <Link href="/"><li className='cursor-pointer'>Home</li></Link>
-                    <li className='cursor-pointer'>Porfolio</li>
-                    <li className='cursor-pointer'>Trabalhos</li>
-                    <li className='cursor-pointer'>Contatos</li>
+                    <Link href="/Portfolio"><li className='cursor-pointer'>Portfolio</li></Link>
+                    <Link href="/Sobre"><li className='cursor-pointer'>Sobre</li></Link>
+                    <Link href="/Sobre"><li className='cursor-pointer'>Contato</li></Link>
                 </ul>
             </nav>
 

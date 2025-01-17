@@ -49,7 +49,9 @@ export default function Parcerias() {
                         breakpoints={{
                             1024: { slidesPerView: 3 }, // Para telas lg
                             768: { slidesPerView: 2 }, // Para telas md
-                            640: { slidesPerView: 1 }, // Para telas sm
+                            400: { slidesPerView: 1 }, // Para telas sm
+                          
+
                         }}
                     >
                         {/* Renderizando os slides dinamicamente */}
@@ -61,7 +63,8 @@ export default function Parcerias() {
                                         src={parceria.imgSrc}
                                         alt={parceria.alt}
                                     />
-                                    <div className="absolute inset-0 w-[550px] bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+
+                                    <div className="absolute inset-0 max-w-[550px] bg-black bg-opacity-60 opacity-0 mx-auto group-hover:opacity-100 flex items-center justify-center transition-opacity">
                                         <p className="text-white text-center px-4">
                                             {parceria.description}
                                         </p>
